@@ -135,6 +135,22 @@ h1 span { display: block; color: var(--copper-light); }
 .service-card h3 { font-size: 21px; font-weight: 600; letter-spacing: -.02em; }
 .service-card p { color: var(--muted); font-size: 14px; line-height: 1.75; }
 
+.brand-showcase {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: #030303;
+}
+.brand-showcase img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 780px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .about { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(50px, 9vw, 150px); align-items: center; background: #12100f; }
 .about-art { position: relative; display: grid; aspect-ratio: 1; max-width: 550px; place-items: center; overflow: hidden; border: 1px solid var(--line); background: radial-gradient(circle, rgba(196,123,81,.18), transparent 55%); }
 .about-art::after { content: ""; position: absolute; inset: 8%; border: 1px solid rgba(255,255,255,.08); transform: rotate(45deg); }
