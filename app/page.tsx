@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const services = [
   {
     number: "01",
@@ -25,31 +27,19 @@ const services = [
   },
 ];
 
-function MountainMark() {
-  return (
-    <svg
-      aria-hidden="true"
-      className="brand-mark"
-      viewBox="0 0 64 48"
-      fill="none"
-    >
-      <path d="M3 43 23 12l9 14L40 14l21 29H3Z" stroke="currentColor" strokeWidth="2.3" />
-      <path d="m16 43 16-17 8 9 6-7 12 15" stroke="currentColor" strokeWidth="1.4" opacity=".55" />
-      <path d="M1 43h62" stroke="currentColor" strokeWidth="2.3" />
-    </svg>
-  );
-}
-
 export default function Home() {
   return (
     <main>
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Neo Nova Innovations home">
-          <MountainMark />
-          <span className="brand-name">
-            NEO NOVA
-            <small>INNOVATIONS</small>
-          </span>
+          <Image
+            className="header-logo"
+            src="/logo/logo.png"
+            alt="Neo Nova Innovations"
+            width={420}
+            height={220}
+            priority
+          />
         </a>
 
         <nav aria-label="Main navigation">
@@ -125,7 +115,13 @@ export default function Home() {
         <div className="about-art" aria-hidden="true">
           <div className="orbit orbit-one" />
           <div className="orbit orbit-two" />
-          <MountainMark />
+          <Image
+            className="about-logo"
+            src="/logo/logo.png"
+            alt=""
+            width={640}
+            height={640}
+          />
           <span>Beyond the expected</span>
         </div>
 
@@ -167,8 +163,13 @@ export default function Home() {
 
       <footer>
         <a className="brand footer-brand" href="#home">
-          <MountainMark />
-          <span className="brand-name">NEO NOVA<small>INNOVATIONS</small></span>
+          <Image
+            className="footer-logo"
+            src="/logo/logo.png"
+            alt="Neo Nova Innovations"
+            width={420}
+            height={220}
+          />
         </a>
         <p>Secure · Innovate · Create</p>
         <p>© 2026 Neo Nova Innovations. All rights reserved.</p>
