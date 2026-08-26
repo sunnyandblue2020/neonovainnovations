@@ -156,7 +156,7 @@ export default function Home() {
             clear, practical path forward.
           </p>
         </div>
-        <a className="button button-light" href="mailto:hello@neonovainnovations.com">
+        <a className="button button-light" href="mailto:support@neonovainnovations.com">
           Request a consultation <span aria-hidden="true">→</span>
         </a>
       </section>
