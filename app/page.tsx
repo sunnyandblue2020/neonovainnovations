@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const services = [
   {
@@ -7,6 +8,7 @@ const services = [
     description:
       "Practical security strategy, architecture, and risk guidance built for complex environments.",
     offerings: ["Security architecture", "Risk and compliance", "Monitoring strategy"],
+    href: "/cybersecurity/",
   },
   {
     number: "02",
@@ -14,20 +16,23 @@ const services = [
     description:
       "Clear technical direction that turns business needs into resilient, maintainable solutions.",
     offerings: ["Solution planning", "Infrastructure guidance", "Technical modernization"],
+    href: "/technology-consulting/",
   },
   {
     number: "03",
     title: "3D Engineering",
     description:
       "Purpose-built concepts and functional designs that move ideas from screen to reality.",
-    offerings: ["Functional prototypes", "Custom enclosures", "Design refinement"],
+    offerings: ["Hobbyist projects", "Custom prints", "Design refinement"],
+    href: "/3d-engineering/",
   },
   {
     number: "04",
     title: "Travel Experiences",
     description:
-      "Thoughtfully planned journeys shaped by curiosity, landscape, and unforgettable moments.",
-    offerings: ["Custom itineraries", "Destination research", "Experience planning"],
+      "Stories from our own journeys and the ways exploration helps us reset beyond demanding work.",
+    offerings: ["Travel stories", "Lessons from the road", "Inspiration to recharge"],
+    href: "/travel-experiences/",
   },
 ];
 
@@ -117,6 +122,9 @@ export default function Home() {
                   <li key={offering}>{offering}</li>
                 ))}
               </ul>
+              <Link className="service-link" href={service.href}>
+                Learn more <span aria-hidden="true">→</span>
+              </Link>
             </article>
           ))}
         </div>
@@ -165,6 +173,48 @@ export default function Home() {
             <div><strong>Useful</strong><span>by intent</span></div>
             <div><strong>Original</strong><span>by nature</span></div>
           </div>
+        </div>
+      </section>
+
+      <section className="section credibility" id="credibility">
+        <div className="credibility-intro">
+          <p className="eyebrow">Why NeoNova</p>
+          <h2>Experience grounded in real environments.</h2>
+          <p>
+            Neo Nova Innovations brings 18 years of cybersecurity experience,
+            practical technical leadership, and a problem-solving mindset to
+            every engagement.
+          </p>
+        </div>
+
+        <div className="credibility-grid">
+          <article>
+            <strong>18+</strong>
+            <h3>Years of experience</h3>
+            <p>Cybersecurity work across complex, regulated, and high-assurance environments.</p>
+          </article>
+          <article>
+            <strong>ISSM · ISSO · ISSE</strong>
+            <h3>Security perspective</h3>
+            <p>Experience spanning security management, operations, and engineering.</p>
+          </article>
+          <article>
+            <strong>Space Coast</strong>
+            <h3>Local technology consulting</h3>
+            <p>Serving Melbourne, the Space Coast, and Brevard County with practical technology guidance.</p>
+          </article>
+          <article>
+            <strong>Flexible reach</strong>
+            <h3>Built around the work</h3>
+            <p>Cybersecurity travel as needed and hobbyist 3D-printing support throughout the United States.</p>
+          </article>
+        </div>
+
+        <div className="credentials" aria-label="Professional credentials">
+          <span>CISSP</span>
+          <span>Splunk Certified Power User</span>
+          <span>Splunk Certified System Administrator</span>
+          <span>Microsoft Azure Fundamentals</span>
         </div>
       </section>
 
