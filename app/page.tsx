@@ -148,17 +148,73 @@ export default function Home() {
       </section>
 
       <section className="contact" id="contact">
-        <div>
+        <div className="contact-intro">
           <p className="eyebrow">Let&apos;s build what&apos;s next</p>
           <h2>Have an idea worth exploring?</h2>
           <p>
             Tell us what you&apos;re working toward. We&apos;ll help you find a
             clear, practical path forward.
           </p>
+          <a className="contact-email" href="mailto:support@neonovainnovations.com">
+            support@neonovainnovations.com
+          </a>
         </div>
-        <a className="button button-light" href="mailto:support@neonovainnovations.com">
-          Request a consultation <span aria-hidden="true">→</span>
-        </a>
+
+        <form
+          className="contact-form"
+          action="https://formsubmit.co/support@neonovainnovations.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New Neo Nova website inquiry" />
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://neonovainnovations.com/thank-you/"
+          />
+          <input
+            className="form-honeypot"
+            type="text"
+            name="_honey"
+            tabIndex={-1}
+            autoComplete="off"
+          />
+
+          <div className="form-row">
+            <label>
+              Name
+              <input type="text" name="name" autoComplete="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autoComplete="email" required />
+            </label>
+          </div>
+
+          <label>
+            What can we help with?
+            <select name="service" defaultValue="" required>
+              <option value="" disabled>Select a service</option>
+              <option>Cybersecurity</option>
+              <option>Technology Consulting</option>
+              <option>3D Engineering</option>
+              <option>Travel Experiences</option>
+              <option>Something else</option>
+            </select>
+          </label>
+
+          <label>
+            Tell us about your idea
+            <textarea name="message" rows={5} required />
+          </label>
+
+          <button className="form-submit" type="submit">
+            Send inquiry <span aria-hidden="true">→</span>
+          </button>
+          <p className="form-note">
+            Your information is used only to respond to your inquiry.
+          </p>
+        </form>
       </section>
 
       <footer>
