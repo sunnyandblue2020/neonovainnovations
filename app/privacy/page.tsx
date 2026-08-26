@@ -10,7 +10,8 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <main className="legal-page">
+    <div className="legal-page">
+      <a className="skip-link" href="#main-content">Skip to main content</a>
       <header className="inner-header">
         <Link href="/" aria-label="Neo Nova Innovations home">
           <Image
@@ -24,6 +25,7 @@ export default function PrivacyPage() {
         <Link href="/">Return home</Link>
       </header>
 
+      <main id="main-content">
       <article className="legal-content">
         <p className="eyebrow">Privacy</p>
         <h1>Privacy notice</h1>
@@ -95,6 +97,7 @@ export default function PrivacyPage() {
           </Link>
         </div>
       </article>
-    </main>
+      </main>
+    </div>
   );
 }
