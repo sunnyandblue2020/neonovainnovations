@@ -40,8 +40,8 @@ a { color: inherit; text-decoration: none; }
 .brand { display: inline-flex; align-items: center; }
 .header-logo {
   display: block;
-  width: clamp(150px, 16vw, 225px);
-  height: 70px;
+  width: clamp(210px, 20vw, 300px);
+  height: 92px;
   object-fit: contain;
   object-position: left center;
 }
@@ -187,7 +187,7 @@ footer p:last-child { text-align: right; }
 
 @media (max-width: 560px) {
   .site-header { padding: 20px; }
-  .header-logo { width: 135px; height: 58px; }
+  .header-logo { width: 175px; height: 68px; }
   nav { gap: 0; }
   .nav-contact { padding: 9px 12px; font-size: 11px; }
   .hero { align-items: flex-start; min-height: 720px; padding-top: 170px; }
