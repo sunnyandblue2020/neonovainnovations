@@ -1,7 +1,13 @@
-import type { Metadata } from "next";\nimport Image from "next/image";
+import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
-\nexport const metadata: Metadata = {\n  title: "Page Not Found | Neo Nova Innovations",\n};\n\nexport default function NotFound() {
+
+export const metadata: Metadata = {
+  title: "Page Not Found | Neo Nova Innovations",
+};
+
+export default function NotFound() {
   return (
     <main className="not-found">
       <div className="not-found-card">
