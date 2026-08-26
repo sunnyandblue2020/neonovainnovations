@@ -33,15 +33,16 @@ a { color: inherit; text-decoration: none; }
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 26px clamp(24px, 6vw, 90px);
+  min-height: 158px;
+  padding: 0 clamp(24px, 6vw, 90px);
   border-bottom: 1px solid rgba(255,255,255,.1);
 }
 
 .brand { display: inline-flex; align-items: center; }
 .header-logo {
   display: block;
-  width: clamp(210px, 20vw, 300px);
-  height: 92px;
+  width: 158px;
+  height: 157px;
   object-fit: contain;
   object-position: left center;
 }
@@ -186,8 +187,8 @@ footer p:last-child { text-align: right; }
 }
 
 @media (max-width: 560px) {
-  .site-header { padding: 20px; }
-  .header-logo { width: 175px; height: 68px; }
+  .site-header { min-height: 124px; padding: 0 20px; }
+  .header-logo { width: 124px; height: 123px; }
   nav { gap: 0; }
   .nav-contact { padding: 9px 12px; font-size: 11px; }
   .hero { align-items: flex-start; min-height: 720px; padding-top: 170px; }
