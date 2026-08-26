@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     description: siteDescription,
     images: [
       {
-        url: "/social-preview.png",
-        width: 1728,
-        height: 910,
+        url: "/social-preview.jpg",
+        width: 1200,
+        height: 630,
         alt: "Neo Nova Innovations",
       },
     ],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Neo Nova Innovations | Secure. Innovate. Create.",
     description: siteDescription,
-    images: ["/social-preview.png"],
+    images: ["/social-preview.jpg"],
   },
 };
 
