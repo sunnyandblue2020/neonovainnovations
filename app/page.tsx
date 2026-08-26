@@ -6,24 +6,28 @@ const services = [
     title: "Cybersecurity",
     description:
       "Practical security strategy, architecture, and risk guidance built for complex environments.",
+    offerings: ["Security architecture", "Risk and compliance", "Monitoring strategy"],
   },
   {
     number: "02",
     title: "Technology Consulting",
     description:
       "Clear technical direction that turns business needs into resilient, maintainable solutions.",
+    offerings: ["Solution planning", "Infrastructure guidance", "Technical modernization"],
   },
   {
     number: "03",
     title: "3D Engineering",
     description:
       "Purpose-built concepts and functional designs that move ideas from screen to reality.",
+    offerings: ["Functional prototypes", "Custom enclosures", "Design refinement"],
   },
   {
     number: "04",
     title: "Travel Experiences",
     description:
       "Thoughtfully planned journeys shaped by curiosity, landscape, and unforgettable moments.",
+    offerings: ["Custom itineraries", "Destination research", "Experience planning"],
   },
 ];
 
@@ -106,6 +110,11 @@ export default function Home() {
               </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
+              <ul className="service-offerings">
+                {service.offerings.map((offering) => (
+                  <li key={offering}>{offering}</li>
+                ))}
+              </ul>
             </article>
           ))}
         </div>
@@ -238,7 +247,11 @@ export default function Home() {
           />
         </a>
         <p>Secure · Innovate · Create</p>
-        <p>© 2026 Neo Nova Innovations. All rights reserved.</p>
+        <p className="footer-legal">
+          <a href="/privacy/">Privacy</a>
+          <span aria-hidden="true">·</span>
+          © 2026 Neo Nova Innovations
+        </p>
       </footer>
     </main>
   );
