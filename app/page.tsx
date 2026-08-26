@@ -32,7 +32,9 @@ const services = [
 ];
 
 export default function Home() {
-  return (\n    <>\n      <a className="skip-link" href="#main-content">Skip to main content</a>
+  return (
+    <>
+      <a className="skip-link" href="#main-content">Skip to main content</a>
       <header className="site-header">
         <a className="brand" href="#home" aria-label="Neo Nova Innovations home">
           <Image
@@ -50,7 +52,10 @@ export default function Home() {
           <a href="#about">About</a>
           <a className="nav-contact" href="#contact">Contact</a>
         </nav>
-      </header>\n\n      <main id="main-content">\n      <section className="hero" id="home">
+      </header>
+
+      <main id="main-content">
+      <section className="hero" id="home">
         <div className="hero-glow" />
         <div className="stars" />
         <div className="hero-content">
@@ -188,7 +193,9 @@ export default function Home() {
             name="_next"
             value="https://neonovainnovations.com/thank-you/"
           />
-          <input\n            className="form-honeypot"\n            aria-hidden="true"
+          <input
+            className="form-honeypot"
+            aria-hidden="true"
             type="text"
             name="_honey"
             tabIndex={-1}
@@ -230,7 +237,10 @@ export default function Home() {
             Your information is used only to respond to your inquiry.
           </p>
         </form>
-      </section>\n      </main>\n\n      <footer>
+      </section>
+      </main>
+
+      <footer>
         <a className="brand footer-brand" href="#home">
           <Image
             className="footer-logo"
@@ -246,5 +256,7 @@ export default function Home() {
           <span aria-hidden="true">·</span>
           © 2026 Neo Nova Innovations
         </p>
-      </footer>\n    </>\n  );
+      </footer>
+    </>
+  );
 }
