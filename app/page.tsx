@@ -111,6 +111,16 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="brand-showcase" aria-label="Neo Nova Innovations brand statement">
+        <Image
+          src="/social-preview.jpg"
+          alt="Neo Nova Innovations — Engineering Tomorrow. Securing Today."
+          width={1200}
+          height={630}
+          sizes="100vw"
+        />
+      </section>
+
       <section className="section about" id="about">
         <div className="about-art" aria-hidden="true">
           <div className="orbit orbit-one" />
